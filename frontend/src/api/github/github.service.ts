@@ -12,9 +12,7 @@ class GithubService {
     }
 
     static async getMe() {
-        const response = await axiosInstance.get('auth/me',{
-            withCredentials:true,
-        })
+        const response = await axiosInstance.get('auth/me')
 
         return response
     }
