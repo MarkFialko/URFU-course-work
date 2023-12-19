@@ -14,7 +14,7 @@ class AuthController {
                 maxAge: 30 * 24 * 60 * 60 * 1000,
                 httpOnly: true,
                 sameSite: 'none',
-                secure: true,
+                secure: false,
             })
 
             return res.redirect(process.env.CLIENT_APP_URL!)
