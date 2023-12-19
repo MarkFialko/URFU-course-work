@@ -13,7 +13,8 @@ class AuthController {
             res.cookie('token', token, {
                 maxAge: 30 * 24 * 60 * 60 * 1000,
                 httpOnly: true,
-                sameSite: 'None' as 'none'
+                sameSite: 'none',
+                secure: true,
             })
 
             return res.redirect(process.env.CLIENT_APP_URL!)
