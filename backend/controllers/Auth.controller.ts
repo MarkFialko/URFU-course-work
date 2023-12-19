@@ -12,7 +12,8 @@ class AuthController {
             // set accessToken from gitHub OAuth to cookie
             res.cookie('token', token, {
                 maxAge: 30 * 24 * 60 * 60 * 1000,
-                httpOnly: true
+                httpOnly: true,
+                sameSite: 'none'
             })
             return res.redirect(process.env.CLIENT_APP_URL!)
 
