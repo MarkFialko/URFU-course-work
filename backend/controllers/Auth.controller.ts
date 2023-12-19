@@ -15,6 +15,7 @@ class AuthController {
                 httpOnly: true,
                 sameSite: 'none'
             })
+            console.log('COOKIES ',res)
             return res.redirect(process.env.CLIENT_APP_URL!)
 
         } catch (e) {
