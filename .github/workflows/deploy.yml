@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - name: move to frontend folder
+        run: cd frontend/
+
       - name: Build
         uses: actions/checkout@v3
 
