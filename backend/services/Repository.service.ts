@@ -53,8 +53,8 @@ class RepositoryService {
             console.log(repositoryToDelete, 'repos', user, 'user')
             const repository: RepositoryDocument | null = await UserRepositorySchema.deleteOne({
                 user: user._id,
-                repository: repositoryToDelete._id,
-            })
+                repository: repositoryToDelete!._id,
+            }) as any
 
             console.log('Repository was deleted', repository)
 
