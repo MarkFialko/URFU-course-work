@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "urfu-course-work"
-  }
+  },
+  "targets": {
+      "urfu-course-work": {
+        "hosting": {
+          "prod": [
+            "urfu-course-work"
+          ],
+          "dev": [
+            "urfu-course-work"
+          ]
+        }
+      }
+    }
 }
