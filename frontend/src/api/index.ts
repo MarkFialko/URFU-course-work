@@ -8,4 +8,8 @@ const axiosInstance = axios.create({
     }
 })
 
+// @ts-ignore
+axiosInstance.interceptors.request.use((config)=> {
+    console.log(config,'config')
+})
 export default axiosInstance
