@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - name: show all
+        run: ls -la
+
       - name: move to frontend folder
         run: cd frontend/
 
