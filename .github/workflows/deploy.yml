@@ -7,6 +7,8 @@ name: Deploy
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./frontend
     steps:
 
       - name: Build
@@ -23,4 +25,3 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_URFU }}'
           projectId: urfu-course-work
           channelId: live
-          entryPoint: ./frontend
