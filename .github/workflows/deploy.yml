@@ -11,8 +11,7 @@ jobs:
       run:
         working-directory: ./frontend
     steps:
-      - name: Check firebaser
-        run: cat .firebaserc
+
 
       - name: Build
         uses: actions/checkout@v3
