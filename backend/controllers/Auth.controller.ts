@@ -35,6 +35,7 @@ class AuthController {
 
     static async getMe(req: Request, res: Response, next: NextFunction) {
         try {
+            console.log(req,'REQUEST')
             const {token} = req.cookies
             console.log('TOKEN FROM COOKIES',token)
             const response = await GithubService.getMe(token)
