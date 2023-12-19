@@ -27,4 +27,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_URFU }}'
           projectId: urfu-course-work
           channelId: live
-          entrypoint: /frontend
+          entrypoint: ./frontend
