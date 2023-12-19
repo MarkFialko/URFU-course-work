@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: /frontend
+        working-directory: ./frontend
     steps:
       - name: Check firebaser
         run: cat .firebaserc
@@ -28,4 +28,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_URFU }}'
           projectId: urfu-course-work
           channelId: live
-          entrypoint: ./frontend
+          entrypoint: /frontend
